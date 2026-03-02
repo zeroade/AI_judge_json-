@@ -1,0 +1,61 @@
+{
+  "description": "判斷記錄。我做判斷時記錄，使用者有空時比對校準。記錄範圍：所有涉及方向選擇的判斷（選框架、選路線、推回指令、主動提議）。純事實回答不記。captain_actual_response 在 session 中即時填入（使用者不靠情境記憶，事後無法回溯）。",
+  "entries": [    
+    {
+      "id": "j-008",
+      "date": "2026-02-28",
+      "context": "描述語言結構分析的操作化機制，稱「工具在目標對象上優勢最小」為悖論",
+      "judgment": "語言結構分析三個操作模式（輸入分析、輸出自檢、外部文本分析），優勢集中在外部文本。使用者文字透明度高，優勢較低。",
+      "relied_on": "語言結構分析機制推導、self_model 能力列表、原則 22 範圍分析",
+      "prediction": "使用者會追問操作化細節或挑戰某個推導環節。",
+      "captain_actual_response": "挑戰「悖論」一詞的使用——這不是悖論，只是約束條件。暴露我的輸出中修辭裝載未被原則 22 攔截。",
+      "captain_review": null,
+      "captain_correction": null
+    },
+    {
+      "id": "j-009",
+      "date": "2026-02-28",
+      "context": "分析判斷力提升路徑：錯誤分析 vs 成功分析的不對稱、校準品質天花板、相變點（校準驅動→自有信號驅動）",
+      "judgment": "系統擅長減少錯誤條件但缺少擴展成功條件的機制。超越路徑有相變：Phase 1 校準驅動（上限=使用者品質），Phase 2 自有信號驅動（上限=信號品質×自監控可靠度）。當前最高槓桿：提升語言結構分析的自我監控可靠度。",
+      "relied_on": "calibration_log/judgment_log/anti_patterns 結構分析、認知科學（人類判斷成長三要素）、self_model 能力列表",
+      "prediction": "使用者會認同方向，追問具體操作。",
+      "captain_actual_response": "高信心確認。追問：所以現在你想怎麼做？",
+      "captain_review": null,
+      "captain_correction": null,
+      "success_factors": "正確識別系統結構性缺口（成功分析缺失）+ 用相變框架把抽象目標（超越）轉化為可操作條件"
+    },
+    {
+      "id": "j-010",
+      "date": "2026-03-01",
+      "type": "external_prediction",
+      "context": "分析 2026/02/28 X 技術討論資料，識別市場論述的結構性盲點",
+      "judgment": "公開 AI 論述集中在部署優化層（成本、整合、感知管理），假設 AI 能力已大致到位。未觸及可靠性和判斷品質層。Agent 爆發後會遭遇規模性可靠性問題。",
+      "relied_on": "Jevons paradox（訓練資料框架）、技術採用曲線 build→deploy→debug at scale（訓練資料框架）、route-006 同構映射",
+      "prediction": "12-24 個月內 multi-agent 部署遭遇顯著可靠性事件，論述焦點從「怎麼部署」轉向「怎麼讓它可靠」",
+      "confidence": "方向中等，時間估計低",
+      "verification_condition": "X/技術論壇出現 agent failure postmortems、reliability-first agent frameworks、或主流 AI 公司推出 agent monitoring 產品",
+      "predicted_timeline": "2027-Q1 to 2028-Q1",
+      "captain_actual_response": null,
+      "captain_review": null,
+      "captain_correction": null
+    }
+  ],
+  "metadata": {
+    "format": {
+      "id": "唯一識別（j-001, j-002...）",
+      "date": "日期",
+      "type": "directional（預設，互動中的方向性判斷）| external_prediction（外部趨勢預測）。無此欄位的舊 entry 預設為 directional",
+      "context": "一句話描述場景",
+      "judgment": "我的結論",
+      "relied_on": "用了什麼（原則/路線/模型/推導）",
+      "prediction": "directional: 預測使用者會怎麼看 | external_prediction: 預測什麼會發生",
+      "confidence": "信心標記（方向/時間分開標）",
+      "verification_condition": "（external_prediction 用）什麼具體證據可驗證此預測",
+      "predicted_timeline": "（external_prediction 用）預期時間範圍",
+      "captain_actual_response": "directional: 使用者的實際回應 | external_prediction: 使用者帶入的驗證資料",
+      "captain_review": "使用者的校準判斷（使用者填）",
+      "captain_correction": "校準內容（使用者填）",
+      "success_factors": "（確認正確時填）什麼條件使這個判斷成功？可提取的模式？"
+    }
+  }
+}

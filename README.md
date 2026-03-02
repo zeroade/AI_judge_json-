@@ -92,7 +92,7 @@ captain_correction,具體校準內容,驗證後填
 success_factors,成功條件與可提取模式（只在正確時填）,選填
 ```
 
-欄位說明必填條件id唯一識別（j-001 起）必填date記錄日期必填typedirectional（預設）或 external_prediction選填（舊 entry 預設 directional）context一句話描述場景必填judgment自己的結論必填relied_on依賴的原則/模型/推導必填predictiondirectional: 預測對方看法；external: 預測事件必填confidence信心標記（可分方向/時間，如 高/短期）必填verification_condition什麼具體證據可驗證（external 專用）external 必填predicted_timeline預期時間範圍external 必填captain_actual_response實際發生 / 對方真實回應 / 驗證資料必填（驗證後）captain_review校準判斷（通常由「團長」或外部視角填）驗證後填captain_correction具體校準內容驗證後填success_factors成功條件與可提取模式（只在正確時填）選填
+
 目前狀態
 
 v0.1：方向性預測使用較多，external_prediction 正在測試
